@@ -1,0 +1,66 @@
+PARTE 1: HOTFIX
+
+Correções de erro podem ser adicionadas a branches com o padrão hotfix/bug-name.
+Após a correção feita, testada e validada pelo time de QA, é feito o merge tanto na develop, quanto na master.
+
+O GITFLOW correspondente seria:
+
+# mudar para a branch develop
+git checkout develop
+
+# atualizar o repo local com o contéudo do repo remoto
+git pull
+
+# criar a branch com o padrao de hotfix e nome do bug
+git checkout -b hotfix/bug-name
+
+# realiza as correções necessárias e sobe a branch criada para o repo remoto
+(git add . && git commit -m 'fix: corrects error ABC' && git push -u origin hotfix/bug-name)
+
+# voltar para a branch develop
+git checkout develop
+
+# mergear brach develop com a branch hotfix/bug-name
+git merge hotfix/bug-name
+
+# voltar para a branch master
+git checkout master
+
+# mergear a branch master com a branch hotfix/bug-name 
+git merge hotfix/bug-name
+
+
+PARTE 2: FEATURE
+Para novas funcionalidades, é criada a partir da develop uma branch chamada feature/feature-name.
+
+GITFLOW para criação de novas features
+
+# Entrar na branch develop
+git checkout develop
+
+# Atualizar o repo local com o contéudo do repo remoto
+git pull
+
+# Criar a branch onde será desenvolvida a nova feature
+git checkout -b feature/feature-name
+
+# realiza as implementações necessárias e sobe a branch criada para o repo remoto
+(git add . && git commit -m 'feat: adds feature ABC' && git push -u origin feature/feature-name)
+
+# volta para a branch develop
+git checkout develop
+
+# mergeia a branch feature com a branch develop
+git merge feature/feature-name
+
+
+OBS: Poderia ser deletada a branch após merge, para isso poderia utilizar tanto o próprio GitHub ou por CLI:
+Caso fix:
+git branch -d hotfix/bug-name
+git push origin --delete hotfix/bug-name
+
+Caso feature:
+git branch -d feature/feature-name
+git push origin --delete feature/feature-name
+
+
