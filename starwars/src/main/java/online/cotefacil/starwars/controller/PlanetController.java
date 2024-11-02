@@ -33,6 +33,15 @@ public class PlanetController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<List<PlanetDto>> getPlanetsByName(@RequestParam String name) {
+        List<PlanetDto> planets = planetService.getPlanetByName(name);
+        if (planets.isEmpty()) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(planets);
+    }
+
     @PostMapping
     public ResponseEntity<PlanetDto> addPlanet(@RequestBody PlanetDto PlanetDto) {
         PlanetDto createdPlanet = planetService.addPlanet(PlanetDto);

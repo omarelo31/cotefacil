@@ -30,6 +30,13 @@ public class PlanetService {
         return planetRepository.findById(id).map(PlanetDto::new);
     }
 
+    public List<PlanetDto> getPlanetByName(String name) {
+        return planetRepository.findByName(name)
+                .stream()
+                .map(PlanetDto::new)
+                .collect(Collectors.toList());
+    }
+
     public PlanetDto addPlanet(PlanetDto planetDto) {
         Planet planet = planetDto.toEntity();
         Planet savedPlanet = planetRepository.save(planet);
