@@ -1,6 +1,7 @@
 package online.cotefacil.starwars.service;
 
 import online.cotefacil.starwars.dto.PlanetDto;
+import online.cotefacil.starwars.model.Planet;
 import online.cotefacil.starwars.repository.PlanetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,5 +23,11 @@ public class PlanetService {
                 .stream()
                 .map(PlanetDto::new)
                 .collect(Collectors.toList());
+    }
+
+    public PlanetDto addPlanet(PlanetDto planetDto) {
+        Planet planet = planetDto.toEntity();
+        Planet savedPlanet = planetRepository.save(planet);
+        return new PlanetDto(savedPlanet);
     }
 }
