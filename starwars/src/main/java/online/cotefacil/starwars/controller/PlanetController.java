@@ -26,6 +26,13 @@ public class PlanetController {
         return ResponseEntity.ok(planets);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<PlanetDto> getPlanetById(@PathVariable Long id) {
+        return planetService.getPlanetById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
     @PostMapping
     public ResponseEntity<PlanetDto> addPlanet(@RequestBody PlanetDto PlanetDto) {
         PlanetDto createdPlanet = planetService.addPlanet(PlanetDto);
