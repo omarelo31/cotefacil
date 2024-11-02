@@ -1,7 +1,6 @@
 package online.cotefacil.starwars.service;
 
 import online.cotefacil.starwars.dto.PlanetDto;
-import online.cotefacil.starwars.model.Planet;
 import online.cotefacil.starwars.repository.PlanetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
