@@ -47,4 +47,10 @@ public class PlanetController {
         PlanetDto createdPlanet = planetService.addPlanet(PlanetDto);
         return new ResponseEntity<>(createdPlanet, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletePlanet(@PathVariable Long id) {
+        planetService.deletePlanet(id);
+        return ResponseEntity.noContent().build();
+    }
 }

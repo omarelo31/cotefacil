@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -42,4 +43,12 @@ public class PlanetService {
         Planet savedPlanet = planetRepository.save(planet);
         return new PlanetDto(savedPlanet);
     }
+
+    public void deletePlanet(Long id) {
+        Planet planet = planetRepository.findById(id)
+                .orElseThrow(() -> new NoSuchElementException(
+                        "Planet with id " + id + " not found")
+                );
+
+        planetRepository.delete(planet);    }
 }
