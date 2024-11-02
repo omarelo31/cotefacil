@@ -1,20 +1,20 @@
 package online.cotefacil.starwars.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import online.cotefacil.starwars.model.Planet;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class PlanetDto {
-    private Long id;
     private String name;
     private String climate;
     private String terrain;
     private Long appearance;
 
     public PlanetDto(Planet planet) {
-        this.id = planet.getId();
         this.name = planet.getName();
         this.climate = planet.getClimate();
         this.terrain = planet.getTerrain();
@@ -22,7 +22,12 @@ public class PlanetDto {
     }
 
     public Planet toEntity() {
-        return new Planet(id, name, climate, terrain, appearance);
+        Planet planet = new Planet();
+        planet.setName(name);
+        planet.setClimate(climate);
+        planet.setTerrain(terrain);
+        planet.setAppearance(appearance);
+        return planet;
     }
 }
 
