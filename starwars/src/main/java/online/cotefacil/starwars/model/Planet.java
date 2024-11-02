@@ -20,5 +20,5 @@ public class Planet {
     private String name;
     private String climate;
     private String terrain;
-    private Long appearance;
+    private int appearance;
 }
