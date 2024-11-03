@@ -14,10 +14,12 @@ import java.util.stream.Collectors;
 @Service
 public class PlanetService {
     private final PlanetRepository planetRepository;
+    private final SwapiService swapiService;
 
     @Autowired
-    public PlanetService(PlanetRepository planetRepository) {
+    public PlanetService(PlanetRepository planetRepository, SwapiService swapiService) {
         this.planetRepository = planetRepository;
+        this.swapiService = swapiService;
     }
 
     public List<PlanetDto> getAllPlanets() {
@@ -40,6 +42,8 @@ public class PlanetService {
 
     public PlanetDto addPlanet(PlanetDto planetDto) {
         Planet planet = planetDto.toEntity();
+        int filmAppearance = swapiService.getFilmAppearance(planetDto.getName());
+        planet.setAppearance(filmAppearance);
         Planet savedPlanet = planetRepository.save(planet);
         return new PlanetDto(savedPlanet);
     }
@@ -50,5 +54,6 @@ public class PlanetService {
                         "Planet with id " + id + " not found")
                 );
 
-        planetRepository.delete(planet);    }
+        planetRepository.delete(planet);
+    }
 }
