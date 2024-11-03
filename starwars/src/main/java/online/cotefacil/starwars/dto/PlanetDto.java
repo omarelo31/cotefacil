@@ -12,7 +12,7 @@ public class PlanetDto {
     private String name;
     private String climate;
     private String terrain;
-    private Long appearance;
+    private int appearance;
 
     public PlanetDto(Planet planet) {
         this.name = planet.getName();
