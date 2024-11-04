@@ -1,7 +1,5 @@
 package online.cotefacil.starwars.service;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import org.springframework.web.client.RestTemplate;
@@ -26,15 +24,27 @@ public class SwapiService {
         return 0;
     }
 
-    @Getter
-    @Setter
     public static class SwapiResponse {
         private List<SwapiPlanet> results;
+
+        public List<SwapiPlanet> getResults() {
+            return results;
+        }
+
+        public void setResults(List<SwapiPlanet> results) {
+            this.results = results;
+        }
     }
 
-    @Getter
-    @Setter
     public static class SwapiPlanet {
         private List<String> films;
+
+        public List<String> getFilms() {
+            return films;
+        }
+
+        public void setFilms(List<String> films) {
+            this.films = films;
+        }
     }
 }
