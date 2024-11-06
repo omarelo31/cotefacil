@@ -41,4 +41,4 @@ Inicie a aplicação
 
 A aplicação poderá ser acessada em: [Aplicação local](http://localhost:8080/faces/planets.xhtml)
 
-A aplicação React pode ser acessada em: [DEPLOY](https://cotefacil-technical.vercel.app/)
+A aplicação React pode ser acessada em: [DEPLOY](https://cotefacil-technical.vercel.app/)# cotefacil

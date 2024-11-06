@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ffb8566-9c4b-4b31-bdc2-4fb6b15797c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cotefacil.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/starwars/.idea/checkstyle-idea.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/starwars/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/starwars/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starwars/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starwars/src/main/java/online/cotefacil/StarWarsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/src/main/java/online/cotefacil/starwars/StarWarsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starwars/src/test/java/starwars/StarwarsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/src/test/java/starwars/StarwarsApplicationTests.java" afterDir="false" />
@@ -81,7 +75,7 @@
       <updated>1730481291572</updated>
       <workItem from="1730481292595" duration="844000" />
       <workItem from="1730539682368" duration="360000" />
-      <workItem from="1730858393774" duration="921000" />
+      <workItem from="1730858393774" duration="1088000" />
     </task>
     <servers />
   </component>
