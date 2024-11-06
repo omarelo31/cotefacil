@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ffb8566-9c4b-4b31-bdc2-4fb6b15797c1" name="Changes" comment="" />
+    <list default="true" id="6ffb8566-9c4b-4b31-bdc2-4fb6b15797c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/cotefacil.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starwars/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starwars/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starwars/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starwars/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starwars/src/main/java/online/cotefacil/StarWarsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/src/main/java/online/cotefacil/starwars/StarWarsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starwars/src/test/java/starwars/StarwarsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/src/test/java/starwars/StarwarsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starwars/src/test/java/starwars/controller/PlanetControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/starwars/src/test/java/starwars/controller/PlanetControllerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mcoldibelli"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:mcoldibelli/cotefacil-technical.git",
+    "accountId": "bd439043-bc60-4064-a12b-e19d2ace6179"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -24,8 +51,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mcoldibelli/Downloads/cotefacil",
+    "last_opened_file_path": "/Users/mcoldibelli/Documents/cotefacil",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +81,7 @@
       <updated>1730481291572</updated>
       <workItem from="1730481292595" duration="844000" />
       <workItem from="1730539682368" duration="360000" />
+      <workItem from="1730858393774" duration="921000" />
     </task>
     <servers />
   </component>
